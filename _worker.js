@@ -1256,7 +1256,7 @@ function 配置信息(UUID, 域名地址) {
   name: ${别名}
   server: ${地址}
   port: ${端口}
-  uuid: ${用户ID}
+//  uuid: ${用户ID}
   network: ${传输层协议}
   tls: ${传输层安全[1]}
   udp: false
@@ -1323,33 +1323,16 @@ async function getVLESSConfig(userID, hostName, sub, UA, RproxyIP, _url) {
 ################################################################
 
 ################################################################
-Subscribe / sub 订阅地址, 支持 Base64、clash-meta、sing-box 订阅格式, ${订阅器}
+Subscribe 
 ---------------------------------------------------------------
 快速自适应订阅地址:
-https://${proxyhost}${hostName}/${userID}
+/** https://${proxyhost}${hostName}/${userID}
 https://${proxyhost}${hostName}/${userID}?sub
 
-Base64订阅地址:
-https://${proxyhost}${hostName}/${userID}?b64
-https://${proxyhost}${hostName}/${userID}?base64
-
-clash订阅地址:
-https://${proxyhost}${hostName}/${userID}?clash
-
-singbox订阅地址:
-https://${proxyhost}${hostName}/${userID}?sb
-https://${proxyhost}${hostName}/${userID}?singbox
+*/
 ---------------------------------------------------------------
 ################################################################
-v2ray
----------------------------------------------------------------
-${v2ray}
----------------------------------------------------------------
-################################################################
-clash-meta
----------------------------------------------------------------
-${clash}
----------------------------------------------------------------
+
 ################################################################
 `;
 	} else {
