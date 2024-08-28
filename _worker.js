@@ -1326,12 +1326,10 @@ async function getVLESSConfig(userID, hostName, sub, UA, RproxyIP, _url) {
 Subscribe 
 ---------------------------------------------------------------
 快速自适应订阅地址:
-/** https://${proxyhost}${hostName}/${userID}
+https://${proxyhost}${hostName}/${userID}
 https://${proxyhost}${hostName}/${userID}?sub
 
-*/
 ---------------------------------------------------------------
-################################################################
 
 ################################################################
 `;
