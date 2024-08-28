@@ -1,8 +1,5 @@
 /**
-*- Telegram交流群：https://t.me/AM_CLUBS
-*- YouTube频道：https://youtube.com/@AM_CLUB
-*- VLESS订阅地址：https://worker.amcloud.filegear-sg.me/866853eb-5293-4f09-bf00-e13eb237c655
-*- Github仓库地址：https://github.com/ansoncloud8
+
 **/
 // @ts-ignore
 import { connect } from 'cloudflare:sockets';
@@ -1324,14 +1321,7 @@ async function getVLESSConfig(userID, hostName, sub, UA, RproxyIP, _url) {
 		}
 		return `
 ################################################################
-telegram 交流群 技术大佬~在线交流!
-t.me/AM_CLUBS
----------------------------------------------------------------
-github 项目地址 点击Star!Star!Star!!!
-https://github.com/ansoncloud8/am-tunnel
----------------------------------------------------------------
-订阅YouTube频道,更多技术分享
-https://youtube.com/@AM_CLUB
+
 ################################################################
 Subscribe / sub 订阅地址, 支持 Base64、clash-meta、sing-box 订阅格式, ${订阅器}
 ---------------------------------------------------------------
