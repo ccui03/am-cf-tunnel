@@ -123,16 +123,7 @@ export default {
 				// const url = new URL(request.url);
 				switch (url.pathname.toLowerCase()) {
 				case '/':
-					const envKey = env.URL302 ? 'URL302' : (env.URL ? 'URL' : null);
-					if (envKey) {
-						const URLs = await ADD(env[envKey]);
-						const URL = URLs[Math.floor(Math.random() * URLs.length)];
-						return envKey === 'URL302' ? Response.redirect(URL, 302) : fetch(new Request(URL, request));
-					}
-					return new Response(JSON.stringify(request.cf, null, 4), { status: 200 });
-				case `/${fakeUserID}`:
-					const fakeConfig = await getVLESSConfig(userID, request.headers.get('Host'), sub, 'CF-Workers-SUB', RproxyIP, url);
-					return new Response(`${fakeConfig}`, { status: 200 });
+					return new Response('Hello World!');
 				case `/${userID}`: {
 					await sendMessage(`#获取订阅 ${FileName}`, request.headers.get('CF-Connecting-IP'), `UA: ${UA}</tg-spoiler>\n域名: ${url.hostname}\n<tg-spoiler>入口: ${url.pathname + url.search}</tg-spoiler>`);
 					if ((!sub || sub == '') && (addresses.length + addressesapi.length + addressesnotls.length + addressesnotlsapi.length + addressescsv.length) == 0){
